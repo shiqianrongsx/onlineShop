@@ -1,0 +1,226 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font:12px/1.6 Arial;
+	background:white url(images/header-background.jpg) repeat-x;
+}
+ul{
+	list-style-type:none;
+}
+a{
+	color:#000;
+	text-decoration:none;
+	cursor:pointer;
+}
+p{
+	text-indent:2em;
+}
+/*-------------------------------------header--------------------------------------*/
+#header{
+	position:relative;
+	width:760px;
+	height:138px;
+	margin:0 auto;
+	font:14px/1.6 Arial;
+}
+#header h1 a{
+	display:block;
+	width:242px;
+	height:76px;
+	background:url(images/logo.png);
+	text-indent:-9999px; /*隐藏文字*/
+	outline:none; /* 去掉Firefox点击时产生的虚线框 */
+}
+#header .mainNavi{
+	position:absolute;
+	top:88px;
+	left:0;
+	color:white;
+}
+#header .mainNavi li{
+	float:left;
+	padding:5px;
+}
+#header .mainNavi li a{
+	display:block;
+	line-height:25px;
+	padding:0 0 0 14px;
+	color:white;
+}
+#header .mainNavi li strong{
+	display:block;
+	padding:0 14px 0 0;
+}
+#header .mainNavi li.current a{
+	background:url(images/main-navi.png) left top no-repeat;
+}
+#header .mainNavi li.current strong{
+	background:url(images/main-navi.png) right top no-repeat;
+}
+#header .mainNavi li a:hover{
+	background:url(images/main-navi-hover.png) left top no-repeat;
+}
+#header .mainNavi li a:hover strong{
+	background:url(images/main-navi-hover.png) right top no-repeat;
+}
+#header .topNavi{
+	position:absolute;
+	top:0;
+	right:0;
+}
+#header .topNavi li{
+	float:left;
+	padding:0 2px;
+}
+#header .topNavi li a{
+	display:block;
+	color:#EE7800;
+	font-family:方正卡通简体;
+	line-height:25px;
+	padding:0 0 0 14px;
+	background:url(images/top-navi-white.jpg) left no-repeat;
+}
+#header .topNavi li a span{
+	display:block;
+	padding:0 14px 0 0;
+	background:url(images/top-navi-white.jpg) right no-repeat;
+}
+#header .topNavi li a:hover{
+	background:url(images/top-navi-hover.jpg) left no-repeat;
+}
+#header .topNavi li a:hover span{
+	background:url(images/top-navi-hover.jpg) right no-repeat;
+}
+#header .accountBox{
+	position:absolute;
+	top:44px;
+	right:10px;
+}
+#header .accountBox li{
+	float:left;
+	text-align:center;
+}
+#header .accountBox li a{
+	display:block;
+	width:93px;
+	height:110px;
+}
+#header .accountBox li span{
+	display:none;
+}
+#header .accountBox li .login{
+	background:url(images/account-left.png) no-repeat;
+}
+#header .accountBox li .cart{
+	background:url(images/account-right.png) no-repeat;
+}
+#header .accountBox li a.login:hover{
+	background:url(images/account-left.png) bottom no-repeat;
+}
+#header .accountBox li a.cart:hover{
+	background:url(images/account-right.png) bottom no-repeat;
+}
+/*-----------------------------------container--------------------------------------*/
+#container{
+	width:760px;
+	margin:0 auto;
+	padding-top:15px;
+}
+#content{
+	float:left;
+	width:540px;
+}
+#content a img{
+	padding:5px;
+	background:#ffefe5;
+	border:1px #DEAF50 solid;
+}
+#content a:hover img{
+	background:#fca34d;
+	border:1px #de4306 solid;
+}
+#content .recommendation{
+	clear:both;
+}
+.img-left img{
+	float:left;
+	margin-right:10px;
+}
+.img-right img{
+	float:right;
+	margin-left:10px;
+}
+.multiColumn ul li{
+	float:left;
+	width:160px;
+	margin:0 10px;
+	padding:0 0 10px 0;
+	text-align:center;
+}
+.recommendation h2{
+	padding-top:20px;
+	color:#ee7800;
+	border-bottom:1px #DEAF50 solid;
+	font:bold 22px/24px 方正卡通简体;
+	background:url(images/rose.png) no-repeat right bottom;
+	margin-bottom:20px;
+}
+/*side*/
+#side{
+	float:right;
+	width:186px;
+	margin-right:10px;
+}
+#side div{
+	margin-top:20px;
+	padding:10px;
+	background:url(images/sidebox-top.png) top no-repeat,
+				url(images/sidebox-bottom.png) bottom no-repeat;
+}
+#side .searchBox{
+	text-align:center;
+}
+#side input{
+	margin:5px 0;
+}
+#side h2{
+	font:bold 22px/24px 方正卡通简体;
+	color:#ee7800;
+	text-align:center;
+}
+#side .menuBox li{
+	border-top:1px solid white;
+	height:25px;
+	font:14px 宋体;
+}
+#side .menuBox li a{
+	display:block;
+	padding-left:35px;
+	background:url(images/menu-bullet.png) no-repeat 10px;
+	color:#ee7800;
+	height:25px;
+	line-height:25px;
+}
+#side .menuBox li a:hover{
+	background:white url(images/menu-bullet.png) no-repeat 10px;
+}
+#side p{
+	padding-left:10px;
+}
+/*------------------------------------footer----------------------------------------*/
+#footer{
+	clear:both;
+	height:53px;
+	background:url(images/footer-background.jpg) repeat-x;
+	text-align:center;
+}
+#footer .p1 a{
+	color:white;
+	font:14px 宋体;
+	padding:10px 5px;
+}
+#footer .p2{
+	padding-top:10px;
+}
